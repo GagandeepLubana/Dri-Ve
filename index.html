@@ -3,37 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Consulting Agency Website</title>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+    rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top justify-content-md-between bg-primary">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top justify-content-md-between bg-body py-0">
     <div class="container-fluid">
-      <a class="navbar-brand col-md-2" href="#">
-        <img src="./images/logo.png" height="50px">
+      <a class="navbar-brand col-md-2 py-0" href="index.html">
+        <img src="./images/logo.png" height="100px">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse col-12 col-md-auto mb-2 justify-content-center mb-md-0" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+      <div class="collapse navbar-collapse col-12 col-md-auto mb-2 align-items-center justify-content-center mb-md-0" id="navbarCollapse">
+        <ul class="navbar-nav justify-content-center mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-secondary" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+            <a class="nav-link text-secondary" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
+            <a class="nav-link  text-secondary" href="about.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link text-secondary" href="contact.html">Contact Us</a>
           </li>
         </ul>
         
       </div>
-      <div class="col-md-2 text-center">
-        <a href="login.html" class="btn btn-primary me-2">Login</a>
+      <div class="collapse navbar-collapse col-md-2 text-center" id="navbarCollapse">
+        <a href="login.html" class="btn btn-primary me-2 nav-link color">Login</a>
         <button type="button" class="btn btn-primary">Sign-up</button>
       </div>
     </div>
@@ -59,13 +75,54 @@
       <button type="button" class="btn btn-primary">Sign-up</button>
     </div>
   </header> -->
-    <main>
+    <main class="p-0 scrollspy-example" tabindex="0" data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0px" data-bs-smooth-scroll="true">
         <section id="banner" class="jumbotron text-center">
-            <h1 class="display-4">Welcome to Our Consulting Agency</h1>
-            <p class="lead">We provide expert advice to help your business succeed.</p>
-            <a href="#" class="btn btn-primary">Get Started</a>
+          <!-- <div class="py-5 text-center bg-image">
+            <div class="mask" style="background: linear-gradient(
+              45deg,
+              hsla(81, 100%, 50%, 0.7),
+              hsla(263, 100%, 50%, 0.7) 100%
+            );">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-white typewriter">
+                  <h1 class="display-4 ">The Only Consulting Agency You Need.</h1>
+                  <p class="lead">We provide expert advice to help your business succeed.</p>
+                  <a href="hi" class="btn btn-primary color" data-mdb-toggle="animation" data-mdb-animation="slide-out-right">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>  -->
+          
         </section>
-        <section id="services" class="container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade text-center" data-mdb-ride="carousel" >
+          <div class="carousel-inner">
+            <div class="carousel-item bg-image1">
+              <!-- <img src="./images/truck.jpg" class="d-block w-100" alt="Wild Landscape"/> -->
+              
+            </div>
+            <div class="carousel-item active bg-image2">
+              <!-- <img src="./images/trucks.jpg" class="d-block w-100" alt="Camera"/> -->
+            </div>
+            <div class="carousel-item bg-image3">
+              <!-- <img src="https://mdbcdn.b-cdn.net/img/new/slides/043.webp" class="d-block w-100" alt="Exotic Fruits"/> -->
+            </div>
+          </div>
+          <div class="mask" style="background: linear-gradient(
+              45deg,
+              hsla(81, 100%, 50%, 0.7),
+              hsla(263, 100%, 50%, 0.7) 100%
+            );">
+              <div class="d-flex justify-content-center align-items-center h-100">
+                <div id="simple-list-example" class="text-white typewriter text-center simple-list-example-scrollspy">
+                  <img src="./images/nlogo.png" alt="">
+                  <h1 class="display-4 ">The Only Consulting Agency You Need.</h1>
+                  <p class="lead">We provide expert advice to help your business succeed.</p>
+                  <a href="#simple-list-item-1" class="btn btn-primary color" data-mdb-toggle="animation" data-mdb-animation="slide-out-right">Get Started</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <section>
             <!-- <div class="row">
                 <div class="col-md-4">
                     <h3>Service 1</h3>
@@ -81,47 +138,109 @@
                     <h3>Service 3</h3>
                     <p>Description of Service 3</p>
                 </div> -->
-                <div class="container px-4 py-5" id="featured-3">
-                  <h2 class="pb-2 text-center border-bottom">Columns with icons</h2>
-                  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                    <div class="feature col">
-                      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <div class="container px-4 py-5 ">
+                  <h2 id="simple-list-item-1" class="pb-2 text-center border-bottom">Our Services</h2>
+                  <div class="row g-1 py-5 row-cols-1 row-cols-lg-3">
+                    <!-- <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                         <img src="./images/safety.svg" height="150px"alt="" class="feature-image">
                       </div>
-                      <h3 class="fs-2">Featured title</h3>
-                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <h3 class="fs-2">Compliance  Services</h3>
                       <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                        Get Started
                       </a>
                     </div>
                     <div class="feature col">
-                      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle"></use></svg>
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="./images/file.svg" height="150px" alt="forms secure with lock icon" class="feature-image">
                       </div>
-                      <h3 class="fs-2">Featured title</h3>
-                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <h3 class="fs-2">Permits</h3>
+                      <p>Dri-Ve can work with you to take the complexity out of ensuring your permits are proactively up-to-date for all international, federal, provincial and municipal governments.</p>
                       <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                        Get Started
                       </a>
                     </div>
                     <div class="feature col">
-                      <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="./images/secure-icon.svg" height="150px" alt="forms secure with lock icon" class="feature-image">
                       </div>
-                      <h3 class="fs-2">Featured title</h3>
-                      <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                      <h3 class="fs-2">Safety & Training Services</h3>
+                      <p>Dri-Ve knows that a safe carrier is a more productive and profitable carrier. That's why we believe it is important to offer a range of customized course options based on your identified training needs.</p>
                       <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+                        Get Started
                       </a>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="./images/secure-icon.svg" height="150px" alt="forms secure with lock icon" class="feature-image">
+                      </div>
+                      <h3 class="fs-2">Safety & Training Services</h3>
+                      <p>Dri-Ve knows that a safe carrier is a more productive and profitable carrier. That's why we believe it is important to offer a range of customized course options based on your identified training needs.</p>
+                      <a href="#" class="icon-link">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="./images/secure-icon.svg" height="150px" alt="forms secure with lock icon" class="feature-image">
+                      </div>
+                      <h3 class="fs-2">Safety & Training Services</h3>
+                      <p>Dri-Ve knows that a safe carrier is a more productive and profitable carrier. That's why we believe it is important to offer a range of customized course options based on your identified training needs.</p>
+                      <a href="#" class="icon-link">
+                        Get Started
+                      </a>
+                    </div>
+                    <div class="feature col">
+                      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                        <img src="./images/secure-icon.svg" height="150px" alt="forms secure with lock icon" class="feature-image">
+                      </div>
+                      <h3 class="fs-2">Safety & Training Services</h3>
+                      <p>Dri-Ve knows that a safe carrier is a more productive and profitable carrier. That's why we believe it is important to offer a range of customized course options based on your identified training needs.</p>
+                      <a href="#" class="icon-link">
+                        Get Started
+                      </a>
+                    </div> -->
+                    <div class="card" style="width: 100px;">
+                      <img src="./images/safety.svg" class="" alt="Sunset Over the Sea" style="height: 100px;"/>
+                      <div class="card-body">
+                        <p class="card-text">make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                      <img src="https://mdbcdn.b-cdn.net/img/new/standard/nature/182.webp" class="card-img-top" alt="Sunset Over the Sea"/>
+                      <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
             </div>
         </section>
-        <section id="about" class="jumbotron text-center">
+        <section id="about" class="jumbotron text-center rounded-0">
             <h2>About Us</h2>
             <p>We are a team of experienced consultants dedicated to helping businesses achieve their goals.</p>
             <a href="#" class="btn btn-primary">Learn More</a>
@@ -136,7 +255,7 @@
                     <input type="email" class="form-control" placeholder="Your Email">
                 </div>
                 <div class="form-group">
-                    <textarea class="form-control" placeholder="Your Message"></textarea>
+                    <textarea class="form-control pb-5" placeholder="Your Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -161,6 +280,10 @@
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        
+        <!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
 </body>
 </html>

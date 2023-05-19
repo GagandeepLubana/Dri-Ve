@@ -34,12 +34,11 @@ main {
 
 #banner {
     text-align: center;
-    padding: 100px 0;
     background-color: #f5f5f5;
 }
 
 #banner h1 {
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
@@ -64,3 +63,113 @@ body {
 .feature-image {
     border-radius: 25%;
 }
+
+/* #banner {
+    background-image: url("./images/truck.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    padding: 12em 0 11em 0;
+} */
+
+
+
+.mask {
+    background-color: rgba(58,71,253,0.2);
+    z-index: 100;
+  }
+
+#banner {
+    padding: 0;
+}
+
+.bg-image1 {
+    background-image: url('./images/truck.jpg');
+    height: 80vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.bg-image2 {
+    background-image: url('./images/trucks.jpg');
+    height: 80vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.card {
+    margin: 10px;
+}
+
+.bg-image3 {
+    background-image: url('./images/trucks.jpg');
+    height: 80vh;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid blue; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: blue; }
+  }
+
+  .color {
+    background-color: #4300be;
+    border-color: #4300be;
+  }

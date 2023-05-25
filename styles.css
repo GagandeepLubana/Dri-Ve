@@ -1,67 +1,67 @@
 /* Add your styles here */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 header {
-    background-color: #333;
-    padding: 20px;
-    color: #fff;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 #banner {
-    text-align: center;
-    background-color: #f5f5f5;
+  text-align: center;
+  background-color: #f5f5f5;
 }
 
 #banner h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
 #banner p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .btn {
-    display: inline-block;
-    padding: 10px 
+  display: inline-block;
+  padding: 10px;
 }
 
 .nav-link {
-    color: white;
+  color: white;
 }
 
 body {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .feature-image {
-    border-radius: 25%;
+  border-radius: 25%;
 }
 
 /* #banner {
@@ -78,98 +78,131 @@ body {
     padding: 12em 0 11em 0;
 } */
 
-
-
 .mask {
-    background-color: rgba(58,71,253,0.2);
-    z-index: 100;
-  }
+  background-color: rgba(58, 71, 253, 0.2);
+  z-index: 100;
+}
 
 #banner {
-    padding: 0;
+  padding: 0;
 }
 
 .bg-image1 {
-    background-image: url('./images/truck.jpg');
-    height: 80vh;
+  background-image: url("./images/truck.jpg");
+  height: 80vh;
 
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .bg-image2 {
-    background-image: url('./images/trucks.jpg');
-    height: 80vh;
+  background-image: url("./images/trucks.jpg");
+  height: 80vh;
 
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
 }
 
 .card {
-    margin: 10px;
+  margin: 10px;
 }
 
 .bg-image3 {
-    background-image: url('./images/trucks.jpg');
-    height: 80vh;
+  background-image: url("./images/trucks.jpg");
+  height: 80vh;
 
-    background-attachment: fixed;
-    background-size: cover;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: bottom;
-    text-align: center;
-    position: relative;
-    box-sizing: border-box;
-    z-index: -1;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+  z-index: -1;
 }
 
-
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .10em solid blue; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .10em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: blue; }
-  }
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.1em solid blue; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.1em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
 
-  .color {
-    background-color: #4300be;
-    border-color: #4300be;
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
   }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: blue;
+  }
+}
+
+.color {
+  background-color: #4300be;
+  border-color: #4300be;
+}
+
+.services {
+  display: flexbox;
+  flex-direction: row;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  /* flex: 1 0 100%; Make each card grow to fill the available space equally */
+  height: 100%;
+}
+
+.row {
+  /* display: flexbox;
+   */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+@media (max-width: 1020px) {
+  .card-img-top {
+    height: 300px; /*Allow the image height to adjust automatically */
+  }
+  /* .card {
+    height: 18rem;
+  } */
+}

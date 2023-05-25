@@ -173,6 +173,8 @@ body {
 
 .color {
   background-color: #4300be;
+  border-color: #4300be;
+  box-shadow: 0 4px 9px -4px #4300be;
 }
 
 .color:hover {

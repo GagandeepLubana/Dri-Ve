@@ -173,7 +173,10 @@ body {
 
 .color {
   background-color: #4300be;
-  border-color: #4300be;
+}
+
+.color:hover {
+  background-color: rgb(72, 136, 255);
 }
 
 .services {

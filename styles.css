@@ -1,8 +1,9 @@
 /* Add your styles here */
 
+
 body {
   font-family: Arial, sans-serif;
-  margin-top: 10vh !important;
+  margin-top: 10vh;
   padding: 0;
 }
 
@@ -54,10 +55,6 @@ main {
 
 .nav-link {
   color: white;
-}
-
-body {
-  margin-top: 50px;
 }
 
 .feature-image {

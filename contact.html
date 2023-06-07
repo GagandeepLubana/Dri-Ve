@@ -84,16 +84,157 @@
 </nav>
       <section id="contact" class="container">
         <h2 class="py-4 text-center border-bottom">Assessment Form</h2>
+        <section class="mb-4">
+          <!--Section description-->
+          <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+              a matter of time to help you.</p>
+      
+          <div class="row">
+      
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                  <form id="contact-form" name="contact-form" action="https://formspree.io/f/mqkovwyv" method="POST">
+      
+                      <!--Grid row-->
+                      <div class="row">
+      
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="Name" name="Name" class="form-control">
+                                  <label for="Name" class="">Name</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+      
+                          <!--Grid column-->
+                          <div class="col-md-6">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="Email" name="Email" class="form-control">
+                                  <label for="Email" class="">Email</label>
+                              </div>
+                          </div>
+                          <!--Grid column-->
+      
+                      </div>
+                      <!--Grid row-->
+      
+                      <!--Grid row-->
+                      <div class="row">
+                          <div class="col-md-12">
+                              <div class="md-form mb-0">
+                                  <input type="text" id="Phone" name="Phone" class="form-control">
+                                  <label for="Phone" class="">Phone</label>
+                              </div>
+                          </div>
+                      </div>
+                      <!--Grid row-->
+      
+                      <!--Grid row-->
+                      <div class="row">
+      
+                          <!--Grid column-->
+                          <div class="col-md-12">
+      
+                              <div class="md-form">
+                                  <textarea type="text" id="Address" name="Address" rows="1" class="form-control md-textarea"></textarea>
+                                  <label for="Address">Address</label>
+                              </div>
+      
+                          </div>
+                      </div>
+                      <!--Grid row-->
+
+                      <!--Grid row-->
+                      <div class="row">
+      
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="City" name="City" class="form-control">
+                                <label for="City" class="">City</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+    
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                              <select id="inputState" class="form-control" name="Province">
+                                <option selected>Choose...</option>
+                                <option>Alberta</option>
+                                <option>British Columbia</option>
+                                <option>Manitoba</option>
+                                <option>Newfoundland & Labrador</option>
+                                <option>New Brunswick</option>
+                                <option>Nova Scotia</option>
+                                <option>Northwest Territories</option>
+                                <option>Nunavut</option>
+                                <option>Ontario</option>
+                                <option>Prince Edward Island</option>
+                                <option>Quebec</option>
+                                <option>Saskatchewan</option>
+                                <option>Ontario</option>
+                                <option>Yukon</option>
+                              </select>
+                                <label for="Province" class="">Province</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+                      </div>
+                      <div class="row">
+      
+                        <!--Grid column-->
+                        <div class="col-md-12">
+    
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                                <label for="message">Message</label>
+                            </div>
+    
+                        </div>
+                    </div>
+      
+                  </form>
+      
+                  <div class="text-center text-md-left">
+                      <a class="btn btn-primary color" onclick="document.getElementById('contact-form').submit();">Send</a>
+                  </div>
+                  <div class="status"></div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                  <ul class="list-unstyled mb-0">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                          <p>Brampton, ON, Canada</p>
+                      </li>
+      
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                          <p>+1 (306) 514-2402</p>
+                      </li>
+      
+                      <li><i class="fas fa-envelope mt-4 fa-2x d-flex justify-content-center"></i>
+                          <p>drivesafetyandcompliance@gmail.com</p>
+                      </li>
+                  </ul>
+              </div>
+              <!--Grid column-->
+      
+          </div>
+      
+<!-- 
         <form>
           <div class="form-row">
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Your Name</label>
+              <label for="inputEmail4">Name</label>
               <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
             </div>
             <div class="form-group col-md-6">
               <label for="inputPassword4">Email</label>
               <input type="password" class="form-control" id="inputPassword4" placeholder="Email">
-            </div>
+            </div>  
           </div>
           <div class="form-group">
             <label for="inputAddress">Phone Number</label>
@@ -131,7 +272,7 @@
             
           </div>
           <button type="submit" class="btn btn-primary color">Submit</button>
-        </form>
+        </form> -->
     </section>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script

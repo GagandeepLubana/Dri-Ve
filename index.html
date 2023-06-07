@@ -73,7 +73,9 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-secondary" href="web/viewer.html">Driver Application</a>
+              <a class="nav-link text-secondary" href="web/viewer.html"
+                >Driver Application</a
+              >
             </li>
           </ul>
         </div>
@@ -96,20 +98,16 @@
       data-bs-offset="0px"
       data-bs-smooth-scroll="true"
     >
-      <section id="banner" class="jumbotron text-center">
-      </section>
+      <section id="banner" class="jumbotron container text-center"></section>
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide carousel-fade text-center"
         data-mdb-ride="carousel"
       >
         <div class="carousel-inner">
-          <div class="carousel-item bg-image1">
-          </div>
-          <div class="carousel-item active bg-image2">
-          </div>
-          <div class="carousel-item bg-image3">
-          </div>
+          <div class="carousel-item bg-image1"></div>
+          <div class="carousel-item active bg-image2"></div>
+          <div class="carousel-item bg-image3"></div>
         </div>
         <div
           class="mask"
@@ -119,12 +117,13 @@
               hsla(81, 100%, 50%, 0.7),
               hsla(268, 100%, 61%, 0.7) 100%
             );
+            min-height: 400px;
           "
         >
-          <div class="d-flex justify-content-center align-items-center h-100">
+          <div class="d-flex justify-content-center align-items-center">
             <div
               id="simple-list-example"
-              class="text-white  text-center simple-list-example-scrollspy"
+              class="text-white text-center simple-list-example-scrollspy"
             >
               <img src="./images/nlogo.png" class="logo" alt="company logo" />
               <h1 class="display-4">The Only Consulting Agency You Need.</h1>
@@ -144,14 +143,18 @@
       </div>
       <section id="simple-list-item-1">
         <div class="container px-4 py-5">
-          <h2  class="pb-2 text-center border-bottom">
-            Our Services
-          </h2>
+          <h2 class="pb-2 text-center border-bottom">Our Services</h2>
           <div class="row">
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card animation fade-in" data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" style="visibility: visible; animation-duration: 2000ms;">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="./images/safety.jpg"
@@ -161,7 +164,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title text-center">Safety & Compliance Services</h4>
+                  <h4 class="card-title text-center">
+                    Safety & Compliance Services
+                  </h4>
                   <!-- <p class="card-text">
                     make up the bulk of the card's content.
                   </p> -->
@@ -235,7 +240,9 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title text-center">International Registration Plan (IRP)</h4>
+                  <h4 class="card-title text-center">
+                    International Registration Plan (IRP)
+                  </h4>
                 </div>
               </div>
             </div>
@@ -252,12 +259,20 @@
                   />
                 </div>
                 <div class="card-body">
-                  <h4 class="card-title text-center">Bussiness Registration & Startup</h4>
+                  <h4 class="card-title text-center">
+                    Bussiness Registration & Startup
+                  </h4>
                 </div>
               </div>
             </div>
             <div class="my-3 d-flex justify-content-center">
-              <a href="./services.html" class="btn btn-primary color" data-mdb-toggle="animation" data-mdb-animation="slide-out-right">Services</a>
+              <a
+                href="./services.html"
+                class="btn btn-primary color"
+                data-mdb-toggle="animation"
+                data-mdb-animation="slide-out-right"
+                >Services</a
+              >
             </div>
           </div>
         </div>
@@ -272,20 +287,36 @@
       </section>
       <section class="container">
         <h2 class="text-center">Contact Us</h2>
-        <form>
+        <form action="https://formspree.io/f/xoqzoypj" method="POST">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name" />
+            <input
+              type="text"
+              class="form-control"
+              id="Name"
+              name="Name"
+              placeholder="Your Name"
+            />
           </div>
           <div class="form-group">
-            <input type="email" class="form-control" placeholder="Your Email" />
+            <input
+              type="email"
+              class="form-control"
+              id="Email"
+              name="Email"
+              placeholder="Your Email"
+            />
           </div>
           <div class="form-group">
             <textarea
               class="form-control pb-5"
               placeholder="Your Message"
+              id="Message"
+              name="Message"
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary color">Send Message</button>
+          <button type="submit" class="btn btn-primary color">
+            Send Message
+          </button>
         </form>
       </section>
     </main>

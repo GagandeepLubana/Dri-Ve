@@ -36,6 +36,9 @@ main {
 #banner {
   text-align: center;
   background-color: #f5f5f5;
+  min-height: 500px;
+  height: 100%;
+  position: relative;
 }
 
 #banner h1 {
@@ -86,7 +89,7 @@ main {
 
 .bg-image1 {
   background-image: url("./images/truck.jpg");
-  height: 80vh;
+  height: 700px;
 
   background-attachment: fixed;
   background-size: cover;
@@ -102,7 +105,7 @@ main {
 
 .bg-image2 {
   background-image: url("./images/trucks.jpg");
-  height: 80vh;
+  height: 700px;
 
   background-attachment: fixed;
   background-size: cover;
@@ -118,24 +121,6 @@ main {
 
 .card {
   margin: 10px;
-}
-
-.bg-image3 {
-  background-image: url("./images/trucks.jpg");
-  height: 80vh;
-
-  background-attachment: fixed;
-  background-size: cover;
-  background-position-x: 50%;
-  background-position-y: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: bottom;
-  text-align: center;
-  position: relative;
-  box-sizing: border-box;
-  z-index: -1;
 }
 
 .typewriter h1 {

@@ -98,49 +98,53 @@
       data-bs-offset="0px"
       data-bs-smooth-scroll="true"
     >
-      <section id="banner" class="jumbotron container text-center"></section>
-      <div
-        id="carouselExampleSlidesOnly"
-        class="carousel slide carousel-fade text-center"
-        data-mdb-ride="carousel"
-      >
-        <div class="carousel-inner">
-          <div class="carousel-item bg-image1"></div>
-          <div class="carousel-item active bg-image2"></div>
-          <div class="carousel-item bg-image3"></div>
-        </div>
+      <section id="banner">
         <div
-          class="mask"
-          style="
-            background: linear-gradient(
-              45deg,
-              hsla(81, 100%, 50%, 0.7),
-              hsla(268, 100%, 61%, 0.7) 100%
-            );
-            min-height: 400px;
-          "
+          id="carouselExampleFade"
+          class="carousel slide carousel-fade text-center"
+          data-mdb-ride="carousel"
         >
-          <div class="d-flex justify-content-center align-items-center">
+          <div class="carousel-inner">
             <div
-              id="simple-list-example"
-              class="text-white text-center simple-list-example-scrollspy"
-            >
-              <img src="./images/nlogo.png" class="logo" alt="company logo" />
-              <h1 class="display-4">The Only Consulting Agency You Need.</h1>
-              <p class="h4 my-3">
-                We provide expert advice to help your business succeed.
-              </p>
-              <a
-                href="#simple-list-item-1"
-                class="btn btn-primary color"
-                data-mdb-toggle="animation"
-                data-mdb-animation="slide-out-right"
-                >Get Started</a
+              class="carousel-item active bg-image1"
+              data-bs-interval="100"
+            ></div>
+            <div class="carousel-item bg-image2" data-bs-interval="100"></div>
+          </div>
+          <div
+            class="mask align-items-center justify-content-center d-flex"
+            style="
+              background: linear-gradient(
+                45deg,
+                hsla(81, 100%, 50%, 0.7),
+                hsla(268, 100%, 61%, 0.7) 100%
+              );
+              min-height: 400px;
+            "
+          >
+            <div class="d-flex justify-content-center align-items-center">
+              <div
+                id="simple-list-example"
+                class="text-white text-center simple-list-example-scrollspy"
               >
+                <img src="./images/nlogo.png" class="logo" alt="company logo" />
+                <h1 class="display-4">The Only Consulting Agency You Need.</h1>
+                <p class="h4 my-3">
+                  We provide expert advice to help your business succeed.
+                </p>
+                <a
+                  href="#simple-list-item-1"
+                  class="btn btn-primary color"
+                  data-mdb-toggle="animation"
+                  data-mdb-animation="slide-out-right"
+                  >Get Started</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <section id="simple-list-item-1">
         <div class="container px-4 py-5">
           <h2 class="pb-2 text-center border-bottom">Our Services</h2>
@@ -177,7 +181,13 @@
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="images/permit.jpg"
@@ -195,7 +205,13 @@
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="images/border.jpg"
@@ -213,7 +229,13 @@
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="images/bond.jpg"
@@ -230,7 +252,13 @@
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="images/fleet.jpg"
@@ -249,7 +277,13 @@
             <div
               class="col-sm-20 col-md-9 col-lg-4 mt-4 mb-4 container ml-0 mr-0"
             >
-              <div class="card">
+              <div
+                class="card animation fade-in"
+                data-mdb-toggle="animation"
+                data-mdb-animation-start="onScroll"
+                data-mdb-animation="fade-in"
+                style="visibility: visible; animation-duration: 2000ms"
+              >
                 <div style="height: 60%">
                   <img
                     src="images/business.jpg"

@@ -1,6 +1,5 @@
 /* Add your styles here */
 
-
 body {
   font-family: Arial, sans-serif;
   margin-top: 10vh;
@@ -79,7 +78,8 @@ main {
 } */
 
 .mask {
-  background-color: rgba(58, 71, 253, 0.2);
+  /* background-color: rgba(58, 71, 253, 0.2); */
+  background-color: rgba(3, 3, 7, 0.2);
   z-index: 100;
 }
 
@@ -105,6 +105,22 @@ main {
 
 .bg-image2 {
   background-image: url("./images/trucks.jpg");
+  height: 700px;
+
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.bg-image3 {
+  background-image: url("./images/aboutimg.jpg");
   height: 700px;
 
   background-attachment: fixed;
@@ -181,7 +197,7 @@ main {
 .logo {
   object-fit: cover;
   max-width: 80%;
-  max-height: 100%
+  max-height: 100%;
 }
 
 @media (max-width: 1020px) {
@@ -346,7 +362,8 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 97px;
+  margin: 97px auto;
+  width: 85%;
 }
 
 .our-mission {
@@ -357,6 +374,7 @@ main {
   margin-top: 40px;
   width: 85%;
   padding-bottom: 70px;
+  /* flex-wrap: wrap; */
 }
 
 .header-section {
@@ -386,6 +404,67 @@ main {
 .header-section p,
 .header-section a {
   color: #fff; /* Set the text color to white */
+}
+
+.our-mission-img {
+  margin-left: 50px;
+  width: 37%;
+}
+
+.our-mission-text {
+  width: 33%;
+}
+
+.about-us-img {
+  margin-right: 50px;
+  width: 37%;
+}
+
+.about-us-text {
+  width: 33%;
+}
+
+@media (max-width: 868px) {
+  .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 97px auto; */
+  }
+  .about-us-img {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .about-us-text {
+    width: auto;
+  }
+
+  .our-mission {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .our-mission-img {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    /* justify-content: center; */
+    /* align-items: center; */
+  }
+  .our-mission p {
+    width: 100%;
+    /* text-align: center; */
+  }
+  .our-mission-text {
+    width: auto;
+  }
 }
 
 /* About Us Page Css - End */

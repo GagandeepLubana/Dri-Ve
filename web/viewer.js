@@ -3209,7 +3209,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "../assets/NAME APPLICATION (5).pdf",
+    value: "../assets/Driver Application (2).pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {

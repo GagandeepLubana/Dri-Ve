@@ -601,14 +601,7 @@ const PDFViewerApplication = {
     if ((0, _pdfjsLib.isDataScheme)(url)) {
       this._hideViewBookmark();
     }
-    let title = (0, _pdfjsLib.getPdfFilenameFromUrl)(url, "");
-    if (!title) {
-      try {
-        title = decodeURIComponent((0, _pdfjsLib.getFilenameFromUrl)(url)) || url;
-      } catch (ex) {
-        title = url;
-      }
-    }
+    let title = "Driver Application";
     this.setTitle(title);
   },
   setTitle(title = this._title) {
@@ -3209,7 +3202,7 @@ const defaultOptions = {
 };
 {
   defaultOptions.defaultUrl = {
-    value: "../assets/Driver Application (2).pdf",
+    value: "../assets/Driver Application (2) (4)_duplicate (1) (1).pdf",
     kind: OptionKind.VIEWER
   };
   defaultOptions.disablePreferences = {
